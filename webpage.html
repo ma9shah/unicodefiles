@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TheHover--Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Font Links-->
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<script>
+var i=0;
+function change(){
+  if (i%2==0) {
+  document.getElementById("change").innerHTML ="Show Less...";
+  }
+  else {
+    document.getElementById("change").innerHTML ="Show More...";
+  }
+  i++;
+}
+
+</script>
+
+
+<style media="screen">
+
+* {
+  font-family: 'PT Sans', sans-serif;
+  font-weight:normal;
+  font-style:normal;
+}
+
+.navbar-brand
+{
+  font-family: 'Eczar', serif;
+  font-size: 30px;
+}
+
+.display-3, h2
+{
+ font-family: 'Eczar', serif;
+}
+
+</style>
+
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#"><img src="howerlogo.jpeg" width="40px">   TheHover</a>
+  <!-- Hamburger -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Collapsing links -->
+    <div class="collapse navbar-collapse justify-content-end" id="collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="SignUp.html">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <!-- Dismissable Alert-->
+<div class="alert alert-dismissible alert-info">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  		<span aria-hidden="true">&times;</span>
+	</button>
+		Click
+	<a href="SignUp.html" class="alert-link justify-content-end">
+		here
+	</a>
+		to Sign Up!
+</div>
+<br>
+<div class="container-fluid">
+  <div class="jumbotron">
+    <h5 align="left" class="display-3">
+      Hover Boards
+    </h5>
+    <h2 class="display-5" align="left">
+      The Future is here!
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum laborum eaque delectus, laudantium ex sint, quaerat labore sit eligendi expedita sapiente perferendis consequatur corporis amet. Numquam cumque pariatur ipsam, laudantium commodi veniam. Magni quae, asperiores earum quo tempora possimus quaerat unde eaque, dignissimos eius aliquam iure inventore officia deleniti cupiditate quasi dolor molestias natus voluptatibus reiciendis repellat maxime. Voluptas quam recusandae possimus,
+      molestias aperiam libero sed explicabo id, suscipit animi. Nemo eveniet dignissimos est accusantium vel nobis molestias, ab possimus.
+    </p>
+  <div id="demo" class="collapse">
+    <p class="lead">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quisquam debitis est tenetur amet ducimus blanditiis commodi deleniti suscipit, iusto nihil exercitationem neque magnam tempora, culpa veniam soluta enim ipsa quam nemo cumque natus maiores provident. Fuga ab quae magni.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dicta aliquam hic consectetur nesciunt, quaerat, perferendis vitae voluptatibus obcaecati fugit necessitatibus tempora! Voluptate fugiat consectetur maxime maiores, saepe cum unde inventore illum quidem illo aspernatur minima explicabo doloribus iusto nisi quam harum, id a assumenda officiis, animi incidunt molestias! Qui doloremque error, aut iure impedit quo molestiae dolorem quidem obcaecati maxime pariatur sint ad ipsum. Vitae repudiandae iure sequi maiores eius? Expedita asperiores consectetur libero ipsum optio, ab! Praesentium, fugiat.
+    </p>
+  </div>
+    <button id="change" type="button" data-toggle="collapse" data-target="#demo" class="btn btn-primary float-right" onclick="change()">Show More...</button>
+</div>
+<div class="container-fluid">
+  <h2 class="display-5" align="left">
+    Pictures of HoverBoards!
+  </h2>
+  <div class="row">
+    <img src="hb5.jpg" alt="Hoverboard Image 1" class="img-thumbnail col-lg-4 col-sm-6">
+    <img src="hb.jpg"  alt="Hoverboard Image 2" class="img-thumbnail col-lg-4 col-sm-6">
+    <img src="hb6.jpg" alt="Hoverboard Image 3" class="img-thumbnail col-lg-4 col-sm-6">
+    <img src="hb5.jpg" alt="Hoverboard Image 4" class="img-thumbnail col-lg-4 col-sm-6">
+    <img src="hb.jpg"  alt="Hoverboard Image 5" class="img-thumbnail col-lg-4 col-sm-6">
+    <img src="hb6.jpg" alt="Hoverboard Image 6" class="img-thumbnail col-lg-4 col-sm-6">
+  </div>
+</body>
+</html>
